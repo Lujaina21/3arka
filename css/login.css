@@ -1,0 +1,135 @@
+/*==================== Body ====================*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  font-weight: 400;
+  font-style: normal;
+  background-image: url(../img/login_full.webp);
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    opacity: 0.6;
+  }
+}
+.btn {
+  color: whitesmoke;
+  padding: 10px 36px;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+/*==================== Login form ====================*/
+.back-icon > a > i {
+  position: absolute;
+  z-index: 100;
+  font-size: 35px;
+  margin: 2rem 0 0 4rem;
+  transition: all 0.3s ease-in-out;
+  color: whitesmoke;
+}
+.back-icon > a > i:hover {
+  transform: translateX(-15px);
+}
+.form {
+  direction: rtl;
+  position: absolute;
+  margin-top: 6rem;
+  margin-left: 52rem;
+  height: 485px;
+  background-color: whitesmoke;
+  border-radius: 15px;
+}
+.form > .title {
+  text-align: center;
+  font-family: "Rakkas", serif;
+  padding-top: 1rem;
+  font-size: 23px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 434px;
+  margin-top: 3rem;
+}
+.inputs input {
+  margin-bottom: 57px;
+  font-size: 25px;
+  color: black;
+  border: none;
+  border-bottom: 2px solid rgba(220, 66, 37, .5);
+  padding: 8px;
+  outline: none;
+  color: #757575;
+  background-color: whitesmoke;
+}
+.inputs > a {
+  font-family: "Rakkas", serif;
+  color: whitesmoke;
+  padding: 10px 20px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(220, 66, 37, 1);
+  width: 146px;
+  text-align: center;
+  margin-right: 8rem;
+}
+.inputs > p {
+  margin-top: 2rem;
+  margin-right: 8rem;
+}
+.inputs > a:hover,
+.inputs > p > a:hover {
+  transform: scale(1.1);
+}
+.inputs > p > span {
+  font-family: "Rakkas", serif;
+  font-size: 25px;
+}
+.inputs > p > a {
+  font-family: "Rakkas", serif;
+  color: rgba(220, 66, 37, 1);
+  font-size: 25px;
+  position: relative;
+}
+.inputs > p > a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: -7px;
+  left: 0px;
+  background-color: rgba(220, 66, 37, 1);
+  transform-origin: right bottom;
+  transition: transform 0.25s ease-out 0s;
+}
+.inputs > p > a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

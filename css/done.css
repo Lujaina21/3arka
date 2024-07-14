@@ -1,0 +1,115 @@
+/*==================== Body ====================*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  font-weight: 400;
+  font-style: normal;
+  background-image: url(../img/signup.webp);
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    opacity: 0.6;
+    height: 100vh;
+  }
+}
+
+/*==================== Navbar ====================*/
+.navbar > a {
+  text-decoration: none;
+  color: whitesmoke;
+  margin: 2rem 0 0 3rem;
+  font-weight: 600;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  font-family: "Rakkas", serif;
+}
+.navbar > a:hover {
+  transform: scale(1.2);
+}
+.navbar > img {
+  transform: translate(76rem, 2rem);
+}
+@media (max-width: 992px) {
+    
+}
+
+@media (max-width: 576px) {
+}
+/*==================== Main Body ====================*/
+.done-container {
+  direction: rtl;
+  position: absolute;
+  margin: 2rem 25rem 20rem;
+  height: 33rem;
+  width: 34rem;
+  background-color: whitesmoke;
+  border-radius: 15px;
+}
+.close-icon > a > i {
+  position: absolute;
+  font-size: 30px;
+  margin: 1rem 31rem 0 0;
+  transition: all 0.3s ease-in-out;
+  color: #dc4225;
+  font-family: "Rakkas", serif;
+}
+.close-icon > a > i:hover {
+  animation: rotate 0.4s linear 1;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.done-container > h1 {
+  color: #dc4225;
+  font-family: "Rakkas", serif;
+  font-size: 65px;
+  margin: 1rem 15rem 14px 0;
+}
+.done-container > img {
+  margin-right: 9rem;
+  animation: rotate 0.7s linear 1;
+}
+.done-container > p {
+  font-family: "Rakkas", serif;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1065px) {
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 676px) {
+}

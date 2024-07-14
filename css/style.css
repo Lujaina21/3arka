@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Rakkas&display=swap");
+
+/*==================== Body ====================*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Rakkas", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-image: url(../img/home.webp);
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    opacity: 0.6;
+  }
+}
+.btn {
+    color: whitesmoke;
+    padding: 10px 36px;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+/*==================== Navbar ====================*/
+.navbar > a {
+  text-decoration: none;
+  color: whitesmoke;
+  margin: 2rem 0 0 3rem;
+  font-weight: 600;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+}
+.navbar > a:hover {
+  transform: scale(1.2);
+}
+.navbar > img {
+  transform: translate(76rem, 2rem);
+}
+/*==================== Home page ====================*/
+.home-page {
+  direction: rtl;
+  text-align: center;
+  margin: 7rem 0 0 27rem;
+  z-index: 100;
+  position: absolute;
+}
+.home-txt {
+  color: whitesmoke;
+}
+.home-txt > h1 {
+  font-size: 64px;
+  margin-bottom: 2rem;
+}
+.home-txt > p {
+  font-size: 20px;
+  width: 32rem;
+}
+.home-btns {
+  margin-top: 4rem;
+}
+.home-btns > a:nth-child(1) {
+  background-color: rgba(0, 47, 75, 0.7);
+}
+.home-btns > a:nth-child(1):hover {
+  background-color: rgba(0, 47, 75, 1);
+}
+.home-btns > a:nth-child(2) {
+  background-color: rgba(220, 66, 37, 0.7);
+  margin-right: 17px;
+}
+.home-btns > a:nth-child(2):hover {
+  background-color: rgba(220, 66, 37, 1);
+}
