@@ -61,7 +61,8 @@ body {
   margin-left: 52rem;
   height: 485px;
   background-color: whitesmoke;
-  border-radius: 15px;
+  border-radius: 25px;
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.5);
 }
 .form > .title {
   text-align: center;
@@ -81,7 +82,7 @@ body {
   font-size: 25px;
   color: black;
   border: none;
-  border-bottom: 2px solid rgba(220, 66, 37, .5);
+  border-bottom: 2px solid rgba(220, 66, 37, 0.5);
   padding: 8px;
   outline: none;
   color: #757575;
@@ -132,4 +133,21 @@ body {
 .inputs > p > a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+@media (max-width: 1065px) {
+  .form {
+    margin-left: 35rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .form {
+    margin-left: 20rem;
+  }
+}
+
+@media (max-width: 676px) {
+  .form {
+    margin-left: 1rem;
+  }
 }
