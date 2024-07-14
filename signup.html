@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>عركه - انضم لينا</title>
+    <!--  ======================== Icons File ========================= -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--========================== Font Family =====================================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap"
+      rel="stylesheet"
+    />
+    <!--======================= Styling file ============================= -->
+    <link rel="stylesheet" href="css/signup.css" />
+    <!--======================= Logo Icon ============================= -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="login.html">تسجيل الدخول</a>
+      <img src="img/logo.png" alt="عركه" width="100px" />
+    </nav>
+    <div class="signup-form">
+      <div class="close-icon">
+        <a href="index.html">
+          <i class="fa-solid fa-x"></i>
+        </a>
+      </div>
+      <h2>انضم الينا</h2>
+      <div class="signup-inputs">
+        <input type="email" name="email" placeholder="الايميل" />
+        <input type="password" name="password" placeholder="كلمة السر" />
+        <input type="name" name="username" placeholder="اسمك" />
+        <input type="text" name="area" placeholder="المنطقه" />
+        <input type="text" name="phone" placeholder="الموبايل" />
+        <input type="text" name="nickname" placeholder="اسم الشهرة " />
+        <input type="text" name="salary" placeholder="الراتب" />
+        <input
+          type="text"
+          name="paragraph"
+          placeholder=" ملخص تاريخك في الاجرام "
+        />
+        <div class="wpn">
+          <label for="weapon">سلاحك؟</label>
+          <div>
+            <label
+              ><input type="radio" name="weapon" value="المطوة" id="wpn1" />
+              المطوه
+            </label>
+          </div>
+          <div>
+            <label
+              ><input type="radio" name="weapon" value="الآلي" id="wpn4" />
+              الآلي
+            </label>
+          </div>
+          <div>
+            <label
+              ><input type="radio" name="weapon" value="السنجة" id="wpn2" />
+              السنجه
+            </label>
+          </div>
+          <div>
+            <label
+              ><input type="radio" name="weapon" value="الطبنجة" id="wpn3" />
+              الطبنجه
+            </label>
+          </div>
+        </div>
+        <div class="img-upload" id="preview">
+          <input name="pfp" type="file" onchange="get(this);" />
+          <label for="pfp">ارفع صورتك</label>
+        </div>
+        <a href="done.html">انضمام</a>
+      </div>
+    </div>
+    <script>
+      function get(input) {
+        if (input.files[0]) {
+          const reader = new FileReader();
+          reader.onloadend = function (e) {
+            const imageUrl = e.target.result;
+            document.getElementById(
+              "preview"
+            ).style.backgroundImage = `url(${imageUrl})`;
+          };
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+    </script>
+  </body>
+</html>

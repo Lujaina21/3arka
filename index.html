@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>عركه</title>
+    <!--  ======================== Icons File ========================= -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--========================== Font Family =====================================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap"
+      rel="stylesheet"
+    />
+    <!--======================= Styling file ============================= -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--======================= Logo Icon ============================= -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="login.html">تسجيل الدخول</a>
+      <img src="img/logo.png" alt="عركه" width="100px" />
+    </nav>
+
+    <div class="home-page">
+      <div class="shadow"></div>
+      <div class="home-txt">
+        <h1>
+          <span class="auto-type"></span>
+          <br />
+          طلبك عندنا..
+        </h1>
+        <p>
+          موقع عركه هيساعدك تدوس في اي عركه لانه بيقدملك تشكيلة بلطجية محترمه,
+          تقدر تختار منهم و تدوس وانت مش قلقان.. يلا احجز عركتك و خلي الباقي
+          علينا
+        </p>
+      </div>
+
+      <div class="home-btns">
+        <a class="order btn" href="order.html">احجز عركه</a>
+        <a class="join btn" href="signup.html">انضم الينا</a>
+      </div>
+    </div>
+
+    <!--============ JS Files ==========-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["معاك عركه؟", "مزنوق في رجاله؟"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
