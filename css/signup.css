@@ -33,6 +33,7 @@ body {
     background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
     opacity: 0.6;
     height: 125vh;
+    width: 100vw;
   }
 }
 
@@ -58,11 +59,15 @@ body {
 .signup-form {
   direction: rtl;
   position: absolute;
-  margin: 3rem 16rem 20rem;
   height: 41rem;
   width: 50rem;
   background-color: whitesmoke;
   border-radius: 15px;
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.5);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 7rem;
 }
 .close-icon > a > i {
   position: absolute;
@@ -196,6 +201,7 @@ body {
     margin-left: 3rem;
     width: 38rem;
     height: 65rem;
+    margin-top: 22rem;
   }
   .signup-inputs {
     grid-template-columns: repeat(1, 1fr);
@@ -234,6 +240,9 @@ body {
   }
   .signup-inputs > a {
     margin-top: 57rem;
+  }
+  .close-icon > a > i {
+    margin-right: 23rem;
   }
   body {
     height: 195vh;
