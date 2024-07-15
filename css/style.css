@@ -38,13 +38,13 @@ body {
   }
 }
 .btn {
-    color: whitesmoke;
-    padding: 10px 36px;
-    font-size: 20px;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
-  }
-  
+  color: whitesmoke;
+  padding: 10px 36px;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
 /*==================== Navbar ====================*/
 .navbar > a {
   text-decoration: none;
@@ -95,4 +95,40 @@ body {
 }
 .home-btns > a:nth-child(2):hover {
   background-color: rgba(220, 66, 37, 1);
+}
+
+@media (max-width: 1065px) {
+  .navbar > img {
+    transform: translate(56rem, 2rem);
+  }
+  .home-txt > h1,
+  .home-txt > p,
+  .home-btns {
+    margin-left: -9rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar > img {
+    transform: translate(40rem, 2rem);
+  }
+  .home-txt > h1,
+  .home-txt > p,
+  .home-btns {
+    margin-left: -16rem;
+  }
+}
+
+@media (max-width: 676px) {
+  .navbar > img {
+    transform: translate(22rem, 2rem);
+  }
+  .home-txt > h1,
+  .home-txt > p,
+  .home-btns {
+    margin-left: -27rem;
+  }
+  .home-txt > p {
+    width: 22rem;
+  }
 }
