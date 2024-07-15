@@ -65,9 +65,11 @@ body {
 .home-page {
   direction: rtl;
   text-align: center;
-  margin: 7rem 0 0 27rem;
   z-index: 100;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .home-txt {
   color: whitesmoke;
@@ -101,34 +103,16 @@ body {
   .navbar > img {
     transform: translate(56rem, 2rem);
   }
-  .home-txt > h1,
-  .home-txt > p,
-  .home-btns {
-    margin-left: -9rem;
-  }
 }
 
 @media (max-width: 992px) {
   .navbar > img {
     transform: translate(40rem, 2rem);
   }
-  .home-txt > h1,
-  .home-txt > p,
-  .home-btns {
-    margin-left: -16rem;
-  }
 }
 
 @media (max-width: 676px) {
   .navbar > img {
     transform: translate(22rem, 2rem);
-  }
-  .home-txt > h1,
-  .home-txt > p,
-  .home-btns {
-    margin-left: -27rem;
-  }
-  .home-txt > p {
-    width: 22rem;
   }
 }
