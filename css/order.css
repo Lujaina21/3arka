@@ -116,6 +116,10 @@ body {
   color: #757575;
   background-color: whitesmoke;
 }
+.date > input,
+.time > input {
+  width: 16rem;
+}
 .order-container > a {
   font-family: "Rakkas", serif;
   color: whitesmoke;
