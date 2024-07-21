@@ -54,8 +54,14 @@
             <p>جــ ٣٥٠</p>
           </div>
           <div class="circle-check">
-            <input type="checkbox" name="tick-id" class="check" value="1" />
-            <i class="fa-solid fa-circle-check"></i>
+            <!-- <input type="checkbox" name="tick-id" class="check" value="1" />
+            <i class="fa-solid fa-circle-check"></i> -->
+            <img
+              src="img/black tick.png"
+              alt=""
+              class="tick-img"
+              width="70px"
+            />
           </div>
         </div>
 
@@ -81,8 +87,12 @@
             <p>جــ ٣٥٠</p>
           </div>
           <div class="circle-check">
-            <input type="checkbox" name="tick-id" class="check" value="1" />
-            <i class="fa-solid fa-circle-check"></i>
+            <img
+              src="img/black tick.png"
+              alt=""
+              class="tick-img"
+              width="70px"
+            />
           </div>
         </div>
 
@@ -108,8 +118,12 @@
             <p>جــ ٣٥٠</p>
           </div>
           <div class="circle-check">
-            <input type="checkbox" name="tick-id" class="check" value="1" />
-            <i class="fa-solid fa-circle-check"></i>
+            <img
+              src="img/black tick.png"
+              alt=""
+              class="tick-img"
+              width="70px"
+            />
           </div>
         </div>
 
@@ -135,8 +149,12 @@
             <p>جــ ٣٥٠</p>
           </div>
           <div class="circle-check">
-            <input type="checkbox" name="tick-id" class="check" value="1" />
-            <i class="fa-solid fa-circle-check"></i>
+            <img
+              src="img/black tick.png"
+              alt=""
+              class="tick-img"
+              width="70px"
+            />
           </div>
         </div>
 
@@ -162,8 +180,12 @@
             <p>جــ ٣٥٠</p>
           </div>
           <div class="circle-check">
-            <input type="checkbox" name="tick-id" class="check" value="1" />
-            <i class="fa-solid fa-circle-check"></i>
+            <img
+              src="img/black tick.png"
+              alt=""
+              class="tick-img"
+              width="70px"
+            />
           </div>
         </div>
 
@@ -189,11 +211,29 @@
             <p>جــ ٣٥٠</p>
           </div>
           <div class="circle-check">
-            <input type="checkbox" name="tick-id" class="check" value="1" />
-            <i class="fa-solid fa-circle-check"></i>
+            <img
+              src="img/black tick.png"
+              alt=""
+              class="tick-img"
+              width="70px"
+            />
           </div>
         </div>
       </div>
     </div>
+    <script>
+      const img = document.querySelectorAll(".tick-img");
+      let toggle = true;
+      img.forEach((img) => {
+        img.addEventListener("click", function () {
+          toggle = !toggle;
+          if (toggle) {
+            img.src = "./img/black tick.png";
+          } else {
+            img.src = "./img/green tick.png";
+          }
+        });
+      });
+    </script>
   </body>
 </html>
