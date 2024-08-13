@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>عركه - ملفك الشخصي</title>
+    <!--  ======================== Icons File ========================= -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--========================== Font Family =====================================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap"
+      rel="stylesheet"
+    />
+    <!--======================= Styling file ============================= -->
+    <link rel="stylesheet" href="css/profile.css" />
+    <!--======================= Logo Icon ============================= -->
+    <link rel="shortcut icon" href="img/pfp.webp" />
+  </head>
+  <body>
+    <div class="profile-container">
+      <div class="close-icon">
+        <a href="index.html">
+          <i class="fa-solid fa-x"></i>
+        </a>
+      </div>
+      <!--*********************** Form Section ***********************-->
+      <h1 class="profile-tit">ملفك الشخصي</h1>
+      <div class="img-edit" id="preview">
+        <input name="pfp" type="file" onchange="get(this);" />
+        <label for="pfp">تغيير صورتك</label>
+      </div>
+
+      <div class="profile-form">
+        <div class="name-edit">
+          <label for="yourName">اسمك</label>
+          <div class="name-input">
+            <input
+              name="name"
+              id="yourName"
+              type="text"
+              value="احمد محسن"
+              contenteditable="true"
+            />
+          </div>
+        </div>
+
+        <div class="nickname-edit">
+          <label for="nickname">اسم الشهره</label>
+          <div class="name-input">
+            <input
+              name="name"
+              id="nickname"
+              type="text"
+              value="سوزي الاردنيه"
+              contenteditable="true"
+            />
+          </div>
+        </div>
+
+        <div class="address-edit">
+          <label for="yourAddress">عنوانك</label>
+          <div class="address-input">
+            <input
+              name="address"
+              id="yourAddress"
+              type="text"
+              value="برة عنك"
+              contenteditable="true"
+            />
+          </div>
+        </div>
+
+        <div class="pn-edit">
+          <label for="Phone">رقم الموبايل</label>
+          <div>
+            <input
+              name="phone"
+              id="Phone"
+              type="text"
+              value="01000007888"
+              contenteditable="true"
+            />
+          </div>
+        </div>
+
+        <div class="email-edit">
+          <label for="yourEmail">ايميلك</label>
+          <div class="">
+            <input
+              name="email"
+              id="yourEmail"
+              type="email"
+              value="abc10@gmail.com"
+              contenteditable="true"
+            />
+          </div>
+        </div>
+
+        <div class="salary-edit">
+          <label for="yourSalary">الراتب</label>
+          <div class="">
+            <input
+              name="salary"
+              id="yourSalary"
+              type="text"
+              value="350"
+              contenteditable="true"
+            />
+          </div>
+        </div>
+
+        <div class="age-edit">
+          <label for="yourAge">سنك</label>
+          <div class="">
+            <input
+              name="age"
+              id="yourAge"
+              type="text"
+              value="28"
+              contenteditable="true"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="wpn-edit">
+        <label for="weapon" class="wpn-tit">سلاحك؟</label>
+        <div class="wpns">
+          <label
+            ><input
+              type="radio"
+              name="weapon"
+              value="المطوة"
+              id="wpn1"
+              checked
+            />
+            المطوه
+          </label>
+        </div>
+        <div>
+          <label
+            ><input type="radio" name="weapon" value="السنجة" id="wpn2" />
+            السنجه
+          </label>
+        </div>
+        <div>
+          <label
+            ><input type="radio" name="weapon" value="الطبنجة" id="wpn3" />
+            الطبنجه
+          </label>
+        </div>
+        <div>
+          <label
+            ><input type="radio" name="weapon" value="الآلي" id="wpn4" />
+            الآلي
+          </label>
+        </div>
+      </div>
+
+      <div class="profile-btn">
+        <button type="submit" class="submit" id="submit-btn">تاكيد</button>
+      </div>
+      <div class="line"></div>
+
+      <!--********************* Fights Section *********************-->
+      <div class="fights-section">
+        <h1 class="profile-tit">عركاتك</h1>
+        <button id="clear-btn">مسح</button>
+        <div class="notif-center">
+          <div class="row">
+            <div class="right-side">
+              <img
+                src="img/person.jpeg"
+                alt=""
+                class="pfp-notif"
+                width="50px"
+              />
+              <span class="data-notif">عندك عركه جديده </span>
+            </div>
+            <span class="time-notif">من دقيقه</span>
+            <div class="notif-line"></div>
+          </div>
+
+          <div class="row">
+            <div class="right-side">
+              <img
+                src="img/person.jpeg"
+                alt=""
+                class="pfp-notif"
+                width="50px"
+              />
+              <span class="data-notif">عندك عركه جديده </span>
+            </div>
+            <span class="time-notif"> دلوقتي </span>
+            <div class="notif-line"></div>
+          </div>
+
+          <div class="row">
+            <div class="right-side">
+              <img
+                src="img/person.jpeg"
+                alt=""
+                class="pfp-notif"
+                width="50px"
+              />
+              <span class="data-notif">عندك عركه جديده </span>
+            </div>
+            <span class="time-notif">من ساعه</span>
+            <div class="notif-line"></div>
+          </div>
+
+          <div class="row">
+            <div class="right-side">
+              <img
+                src="img/person.jpeg"
+                alt=""
+                class="pfp-notif"
+                width="50px"
+              />
+              <span class="data-notif">عندك عركه جديده </span>
+            </div>
+            <span class="time-notif">من دقيقه</span>
+            <div class="notif-line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--***JS***-->
+    <script>
+      //img upload
+      function get(input) {
+        if (input.files[0]) {
+          const reader = new FileReader();
+          reader.onloadend = function (e) {
+            const imageUrl = e.target.result;
+            document.getElementById(
+              "preview"
+            ).style.backgroundImage = `url(${imageUrl})`;
+          };
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+      document
+        .getElementById("submit-btn")
+        .addEventListener("click", function () {
+          alert("Profile saved!");
+        });
+
+      //clear all notif.
+      function clearAllNotifications() {
+        const notifs = document.querySelectorAll(".row");
+        const notificationCenter = document.querySelector(".notif-center");
+
+        notifs.forEach((row) => {
+          row.remove();
+        });
+
+        if (notificationCenter.innerHTML.trim() === "") {
+          const no_notifs = document.createElement("h1");
+          no_notifs.textContent = "لا يوجد اشعارات الان";
+          no_notifs.style.textAlign = "center";
+          no_notifs.style.fontSize = "25px";
+          no_notifs.style.color = "#757575";
+          no_notifs.style.fontWeight = "lighter";
+          no_notifs.style.fontFamily = "kawkab";
+          no_notifs.style.marginBottom = "2rem";
+          notificationCenter.appendChild(no_notifs);
+        }
+      }
+      document
+        .getElementById("clear-btn")
+        .addEventListener("click", clearAllNotifications);
+    </script>
+  </body>
+</html>
