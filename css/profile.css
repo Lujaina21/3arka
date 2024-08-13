@@ -1,0 +1,304 @@
+/*==================== Body ====================*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Rakkas", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-image: url(../img/apply_bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/*==================== Profile ====================*/
+.profile-container {
+  direction: rtl;
+  position: absolute;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.5);
+  height: auto;
+  width: 59rem;
+  margin-top: 37rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.profile-tit {
+  color: #dc4225;
+  font-family: "Rakkas", serif;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 40px;
+}
+.profile-tit > i {
+  color: #f7c427;
+}
+.close-icon > a > i {
+  position: absolute;
+  font-size: 30px;
+  margin: 1rem 55rem 0 2rem;
+  transition: all 0.3s ease-in-out;
+  color: #dc4225;
+  font-family: "Rakkas", serif;
+}
+.close-icon > a > i:hover {
+  animation: rotate 0.4s linear 1;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.img-edit {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  aspect-ratio: 3/4;
+  background-color: rgb(0, 0, 0);
+  height: 217px;
+  transform: translate(-3rem, 3rem);
+  overflow: hidden;
+  background-image: url("../img/pfp.webp");
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #1a1a1a;
+}
+.img-edit input[type="file"] {
+  opacity: 0;
+  z-index: 100;
+}
+.img-edit label {
+  opacity: 0;
+  position: absolute;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  font-size: 25px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.img-edit:hover label {
+  opacity: 100%;
+}
+.profile-form {
+  display: grid;
+  grid-template-columns: repeat(2, 19rem);
+  grid-template-rows: repeat(4, auto);
+  gap: 29px;
+  padding: 14px;
+  margin-top: -12rem;
+  transform: translateX(-16rem);
+}
+.profile-form input {
+  border: none;
+  outline: rgba(220, 66, 37, 0.5);
+  font-size: 20px;
+  border-bottom: 1px solid rgba(220, 66, 37, 0.5);
+  padding: 8px;
+  color: #757575;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+.profile-form input:focus {
+  outline: 0;
+  box-shadow: 0 0 0 1px #dc4225;
+}
+.profile-form label {
+  font-size: 20px;
+}
+.wpn-edit {
+  display: grid;
+  grid-template-columns: repeat(4, 5rem);
+  text-align: right;
+  direction: rtl;
+  margin-right: 37rem;
+  margin-top: -2rem;
+  position: absolute;
+}
+.wpn-edit input[type="radio"] {
+  accent-color: #dc4225;
+  margin-top: 10px;
+}
+.wpn-edit > label {
+  font-size: 20px;
+  position: absolute;
+  margin-top: -35px;
+}
+.wpn-edit > div label {
+  font-size: 20px;
+  color: #757575;
+  margin-top: 2rem;
+}
+.profile-btn > .submit {
+  font-family: "Rakkas", serif;
+  color: whitesmoke;
+  padding: 10px 20px;
+  font-size: 25px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(220, 66, 37, 1);
+  width: 146px;
+  text-align: center;
+  border: none;
+  transform: translate(-3.3rem, -6rem);
+}
+.profile-btn > .submit:hover {
+  opacity: 85%;
+}
+.line {
+  border-bottom: 1px solid #dc4225;
+  margin-top: 2rem;
+}
+
+@media (max-width: 992px) {
+  .profile-container {
+    width: 48rem;
+  }
+  .close-icon > a > i {
+    margin-right: 45rem;
+  }
+  .profile-form {
+    grid-template-columns: repeat(2, 13rem);
+  }
+  .profile-form input {
+    width: 13rem;
+  }
+  .wpn-edit {
+    margin-right: 32rem;
+    grid-template-columns: repeat(4, 4rem);
+  }
+}
+
+@media (max-width: 676px) {
+  .profile-container {
+    width: 29rem;
+    margin-top: 58rem;
+  }
+  .close-icon > a > i {
+    margin-right: 26rem;
+  }
+  .img-edit {
+    transform: translate(-10rem, 3rem);
+  }
+  .profile-form {
+    grid-template-rows: repeat(7, auto);
+    transform: translateX(-4rem);
+    margin-top: 4rem;
+    grid-template-columns: repeat(1, auto);
+  }
+  .profile-form input {
+    width: 20rem;
+  }
+  .wpn-edit {
+    grid-template-columns: repeat(4, 5rem);
+    margin-right: 5rem;
+    margin-top: 4rem;
+  }
+  .profile-btn > .submit {
+    transform: translate(-9.3rem, 10rem);
+  }
+  .line {
+    margin-top: 15rem;
+  }
+}
+/*==================== Fights Section ====================*/
+#clear-btn {
+  font-family: "Rakkas", serif;
+  color: whitesmoke;
+  padding: 5px 10px;
+  font-size: 15px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(220, 66, 37, 1);
+  width: 100px;
+  text-align: center;
+  border: none;
+  transform: translateX(-48rem);
+}
+#clear-btn:hover {
+  color: rgba(220, 66, 37, 1);
+  background-color: whitesmoke;
+  font-weight: 500;
+}
+.notif-center {
+  margin-top: 2rem;
+}
+.row {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  padding: 1px;
+  margin-left: 64px;
+  margin-right: 48px;
+  background-color: #f3f5f6;
+}
+.row .right-side > i {
+  color: #f7c427;
+}
+.row:hover {
+  transform: scale(1);
+  box-shadow: 0px 0px 10px #00000029;
+  background-color: #e6e6e6;
+}
+.right-side {
+  transform: translate(-1rem, -1rem);
+  margin-top: 2rem;
+}
+.right-side > img {
+  border-radius: 50px;
+}
+.data-notif {
+  padding: 10px;
+  position: absolute;
+}
+.time-notif {
+  padding: 10px;
+  font-size: 15px;
+  position: absolute;
+  transform: translate(-4rem, -3rem);
+  color: #757575;
+}
+.notif-line {
+  border-bottom: 2px solid #c2c2c2;
+  border-radius: 50px;
+  width: 52rem;
+  margin-top: -3px;
+}
+
+@media (max-width: 992px) {
+  .notif-line {
+    width: 41rem;
+  }
+  #clear-btn {
+    transform: translateX(-38rem);
+  }
+}
+
+@media (max-width: 676px) {
+  .notif-line {
+    width: 22rem;
+  }
+  #clear-btn {
+    transform: translateX(-18rem);
+  }
+}
